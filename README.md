@@ -27,16 +27,16 @@
 
 ## Код:
 
-#include <stdio.h>
+#include <stdio.h> 
 #include <locale.h>
 
-#define MIN_NUMBER 100
+#define MIN_NUMBER 100 
 #define MAX_NUMBER 999
 
-int main() {
-    setlocale(LC_CTYPE, "RUS");
-    int n;
-    printf("Введите трехзначное число:");
+int main() { 
+    setlocale(LC_CTYPE, "RUS"); 
+    int n; 
+    printf("Введите трехзначное число:"); 
     scanf("%d", &n);
 
     int a = n / 100;
