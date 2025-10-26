@@ -27,36 +27,36 @@
 
 ## Код:
 
-#include <stdio.h> 
-#include <locale.h>
-
-#define MIN_NUMBER 100 
-#define MAX_NUMBER 999
-
-int main() { 
-    setlocale(LC_CTYPE, "RUS"); 
-    int n; 
-    printf("Введите трехзначное число:"); 
-    scanf("%d", &n);
-
-    int a = n / 100;
-    int b = n / 10 % 10;
-    int c = n % 10;
-
-    if (a == b && b == c) {
-        printf("все три разряда равны");
-    }
-    else if (a == b) {
-        printf("число сотен и десятков равно");
-    }
-    else if (a == c) {
-        printf("число сотен и единиц равно");
-    }
-    else if (b == c) {
-        printf("число десятков и единиц равно");
-    }
-    else {
-        printf("Все разряды различны");
-    }
-    return 0;
-}
+      #include <stdio.h> 
+      #include <locale.h>
+      
+      #define MIN_NUMBER 100 
+      #define MAX_NUMBER 999
+      
+      int main() { 
+          setlocale(LC_CTYPE, "RUS"); 
+          int n; 
+          printf("Введите трехзначное число:"); 
+          scanf("%d", &n);
+      
+          int a = n / 100;
+          int b = n / 10 % 10;
+          int c = n % 10;
+      
+          if (a == b && b == c) {
+              printf("все три разряда равны");
+          }
+          else if (a == b) {
+              printf("число сотен и десятков равно");
+          }
+          else if (a == c) {
+              printf("число сотен и единиц равно");
+          }
+          else if (b == c) {
+              printf("число десятков и единиц равно");
+          }
+          else {
+              printf("Все разряды различны");
+          }
+          return 0;
+      }
