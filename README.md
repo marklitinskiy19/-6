@@ -26,11 +26,11 @@
 6. Конец
 
 ## Код:
+
    #include <stdio.h>
    #include <locale.h>
    #define MIN_NUMBER 100
    #define MAX_NUMBER 999
-
    int main() {
        setlocale(LC_CTYPE, "RUS");
        int n;
